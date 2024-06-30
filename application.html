@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APPLICATION FORM</title>
+    <style>
+        *{
+            background-color: rgb(22, 78, 151);
+            color: aliceblue;
+        }
+        div{
+            width: 50vw;
+        }
+        input{
+            background-color: aliceblue;
+            border: none;
+            color: black;
+        }
+        select{
+            background-color: aliceblue;
+            border: none;
+            color: black;
+        }
+        table{
+            height: 20vh;
+        }
+        button{
+            background-color: orangered;
+            width: 10vw;
+        }
+        a{
+            background-color: orangered;
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <a href="./index.html"><button>Fieldset Form</button></a>
+
+    <div>
+      <center><h1>Application Form</h1></center>
+      <form action="./thanks.html">
+      <table>
+        <tr>
+          <td><label for="name">First Name:</label> </td>
+          <td><input type="text" id="name"></td>
+          <td></td>
+          <td><label for="last">Last Name:</label> </td>
+          <td><input type="text" id="last"></td>
+        </tr>
+        <tr>
+          <td><label for="date">Date of birth:</label> </td>
+          <td><input type="date" id="date" required></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+          <td><label for="age">Age:</label> </td>
+          <td><input type="number" id="age"></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label> </td>
+          <td><select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select></td>
+          <td></td>
+          <td><label for="email">Email Address:</label> </td>
+          <td><input type="email" id="email"></td>
+        </tr>
+      </table>
+      Positions Available:
+       <input type="radio" name="Positions" id="junior">
+       <label for="junior">Junior Developer</label>
+       <input type="radio" name="Positions" id="mid">
+       <label for="mid">Mid-level Developer</label>
+       <input type="radio" name="Positions" id="senior">
+       <label for="senior">Senior Developer</label>
+       <br><br>
+       Programming Languages: 
+       <input type="checkbox" name="" id="java">
+       <label for="java">Java</label>
+       <input type="checkbox" name="" id="jscript">
+       <label for="jscript">JavaScript</label>
+       <input type="checkbox" name="" id="python">
+       <label for="python">Python</label>
+       <br>
+       <table>
+        <tr>
+            <td><label for="pass">Password:</label></td>
+            <td><input type="password" name="" id="pass" required></td>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><label for="confirm">Confirm Password:</label></td>
+            <td><input type="password" name="" id="confirm" required></td>
+        </tr>
+       </table>
+       <center>
+        <button>Submit</button>
+        <button><a href="./application.html">Reset</a></button>
+       </center>
+    </form>
+    </div>
+  </body>
+</html>
